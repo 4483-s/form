@@ -34,13 +34,15 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+}
+
+.dark > div {
+  height: 100%;
+  display: flex;
   align-items: center;
 }
-.dark > * {
-  flex: 1;
-}
-.dark > div {
-  text-align: end;
+.dark > div > div {
+  display: inline;
 }
 .dark img {
   width: 100px;
