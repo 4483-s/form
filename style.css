@@ -63,7 +63,7 @@ form {
   background-color: #ffffff;
   padding: 1em;
 }
-h2 {
+.mid h2 {
   margin-bottom: 2em;
 }
 label {
@@ -91,6 +91,13 @@ input:focus:invalid {
 input:valid {
   border: 2px solid rgb(19, 230, 19);
 }
+input:focus {
+  box-shadow: 1px 1px 5px black;
+}
+#password:invalid,
+#confirm-password:invalid {
+  border: 2px solid red;
+}
 .inputs > * {
   min-width: 30%;
   display: flex;
@@ -103,4 +110,14 @@ input:valid {
   border-radius: 7px;
   font-size: 1.1rem;
   padding: 0.5em 2em;
+  margin: 2em;
+}
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #596d48;
+}
+.create p {
+  margin: 2em;
+  font-size: 1rem;
 }
