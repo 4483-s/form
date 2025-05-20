@@ -1,56 +1,106 @@
 @font-face {
-  font-family: "Norse bold";
+  font-family: "Norse";
   src: url(./Norse-Bold.otf);
 }
 body {
   display: flex;
 }
-.left {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
+.background {
+  width: 100%;
   height: 100vh;
 }
-.left img {
+.left {
+  position: relative;
+  flex: 1;
+}
+.text-background {
+  top: 20%;
   position: absolute;
-  height: 1200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.odin-img {
+  height: 80%;
+  width: auto;
+}
+.left-text {
+  font-size: 8rem;
+  font-family: Norse, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: white;
 }
 .right {
-  flex: 1.9;
+  flex: 1.7;
+  padding: 5em 0;
+  font-family: Roboto, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 3em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+form {
+  padding: 0;
+}
+.top {
+  flex: 1;
+  padding: 1em;
+}
+.bottom {
+  flex: 2;
   display: flex;
   flex-direction: column;
 }
-.right > * {
-  background-color: #3d87d1;
-  flex: 1;
-  height: 100vh;
+.mid {
+  background-color: #ffffff;
+  padding: 1em;
 }
-.dark {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 25%;
-  position: absolute;
-  top: 30%;
+h2 {
+  margin-bottom: 2em;
+}
+label {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  max-width: 68%;
+}
+input {
+  margin: 0.5em 0;
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  height: 1.7rem;
+}
+input:focus:invalid {
+  border: 2px solid red;
+}
+/* input:focus {
+  border: 2px solid blue;
+} */
+input:valid {
+  border: 2px solid rgb(19, 230, 19);
+}
+.inputs > * {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 45%;
+}
+.submit {
   color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.dark > div {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.dark > div > div {
-  display: inline;
-}
-.dark img {
-  width: 100px;
-  height: auto;
-  position: static;
-}
-.dark h1 {
-  display: inline;
-  font-size: 6.5em;
-  font-family: "Norse bold";
+  background-color: #596d48;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  padding: 0.5em 2em;
 }
